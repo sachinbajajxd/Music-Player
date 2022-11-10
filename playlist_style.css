@@ -1,0 +1,557 @@
+body{
+    background-image: linear-gradient(#0F2027,#203A43,#2C5364);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body{
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+
+.navbar{
+    height:auto;
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: space-between;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	color:#e2e8ed;
+
+}
+
+.navbar > div {
+	display: inline-block;
+}
+
+
+#title-img-name > div{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#music-player-img img{
+    height: 3.3rem;
+	width: 3.3rem;
+	border-radius: 100%;
+}
+
+
+
+.search-bar{
+    width: 20%;
+	position: relative;
+    
+}
+
+.search-bar input[type="text"]{
+    height:1.2rem;
+    padding :2px;
+    font-weight: 500;
+    width:100%;
+    text-decoration: none;
+    text-align: center;
+    background-color:rgb(226, 221, 204);
+    border-radius: 15px;
+    border:none;
+    
+}
+
+
+/* Search-icon */
+.search-bar > div:nth-child(2) {
+	display: inline-block;
+    width: min-content;
+	position: absolute;
+    color: rgba(0, 0, 0, 0.5);
+	left: 5%;
+	top: 10%;
+}
+/* Notification icon */
+.notification i{
+ 
+	width:40px;
+    height:30px;
+    display: inline-block;
+    
+}
+
+.favorites{
+    margin-right: 2rem;
+}
+
+.user img{
+    height:45px;
+    width:45px;
+    border-radius: 100%;
+}
+
+/* Navbar ends */
+
+/* main section */
+
+main{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.left-side{
+    display: inline-block;
+    overflow: hidden;
+    width:70%;
+    height:82vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.left-side::-webkit-scrollbar{
+    display:none;
+}
+
+/* Aside section */
+.right-side {
+	width: 28%;
+	height: 86vh;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* left-side */
+
+/* manual jumbotron */
+.jumbotron-manual{
+
+    height: 20vw;
+	width: 100%;
+	margin-top: 12px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: var(--jumbotron-color); */
+    background-color: lightblue;
+	margin-bottom: 40px;
+	position: relative;
+	
+
+}
+
+/* image insider jumbotron */
+.jumbotron-image {
+	height: 20vw;
+	width: 20vw;
+	background-image: linear-gradient(
+			to bottom,
+			transparent,
+			rgba(20, 27, 65, 1)
+		),
+		url("images/playlist_pg_1.jpg");
+	background-size: cover;
+}
+/* right part of the jumbotron */
+.jumbotron-detail {
+	width: 67%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-right: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* descriptive part contains the descripton of the song and action part contains the follow and play buttons */
+.descriptive-part,
+.action-part {
+	width: 100%;
+	height: max-content;
+}
+/* song name and followers */
+.song-name-main,
+.followers {
+	display: inline-block;
+}
+/* song name heading properties */
+.song-name-main h1 {
+	font-size: 2vw;
+}
+/* follower count */
+.followers {
+	position: absolute;
+	right: 2%;
+	top: 10%;
+
+}
+
+
+.followers,
+.author {
+	font-size: 1.5vw;
+}
+/* description of the jumbotron */
+.desc {
+	font-size: 1vw;
+}
+
+.action-part p {
+	font-size: 1vw;
+}
+.btns > button {
+	border: 0px;
+	height: 3vw;
+	width: 10vw;
+	color: white;
+	font-size: 1.2vw;
+    margin-top: 1%;
+}
+/* play button */
+.btns > button:nth-child(1) {
+    background-image: linear-gradient(#373B44,#4286f4);
+}
+/* follow button */
+.btns > button:nth-child(2) {
+    background-image: linear-gradient(#373B44,#4286f4);
+}
+/* particular item in the playlist */
+.playlist-item {
+	height: 8vh;
+	box-sizing: border-box;
+    background-color: #506889;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* playlist item hovering effects */
+.playlist-item:hover {
+    background-color: #65676c;
+}
+
+
+/* left part of the playlist item */
+.left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+	padding: 0% 1%;
+}
+/* center part of the playlist item which contains the duration length of the song */
+.center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: min-content;
+	height: 100%;
+}
+/* right part of the playlist item, which contains icons */
+.right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+}/* now adjusting the contents of left, center and right parts */
+.left > div:nth-child(2) {
+	height: 80%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 12% 0px 12%;
+	position: relative;
+}
+.left > div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+.left > div:nth-child(3) p {
+	color: rgb(185, 185, 185);
+}
+
+/* adjusting fonts in the playlist items  */
+.left div p {
+	font-size: 14px;
+}
+.center {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.right {
+	color: rgb(185, 185, 185);
+}
+.right div:nth-child(2) {
+	margin-left: 27%;
+}
+
+
+
+
+label {
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	padding-bottom: 5px;
+	z-index: 3;
+	box-shadow: 0px 0px 2px 1px white;;
+	width: 70px;
+	font-size: 20px;
+	height: 21px;
+	text-align: center;
+	background-image: linear-gradient(red, blue);
+}
+/* on a normal display, it will be hidden */
+label ~ input {
+	display: none;
+}
+
+.section-heading {
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 12px;
+}
+/* adjusting for side by side display */
+.section-heading div,
+.section-heading h1 {
+	display: inline-block;
+}
+.section-heading h1 {
+	font-size: 23px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#e2e8ed;
+}
+.section-heading div {
+	position: absolute;
+	bottom: 0%;
+	right: 0px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+	height: 36vh;
+	overflow: scroll;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+/* hiding the scrollbar */
+.list::-webkit-scrollbar {
+	display: none;
+}
+/* this is particular item in the "list  container*/
+.list-item {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+    /* background-color: #d5dbeb; */
+}
+/* hovering effect for the list item */
+.list-item:hover {
+    background-color: #657381;
+}
+/* adjusting the name and image of the songs relative to their original position */
+.list-item > div:nth-child(1) {
+	width: 100px;
+	height: 100%;
+	position: relative;
+}
+.list-item > div:nth-child(1) > img {
+	width: 100%;
+	height: 100%;
+}
+.author-name {
+	font-size: 12px;
+	color: rgb(216, 204, 204);
+	
+}
+.extra {
+	text-align: right;
+	height: 100%;
+}
+
+/* Footer section */
+
+footer {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 3.5rem;
+	background-color: #726577;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	z-index: 6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	color:#0e0e0f;
+}
+/* Song img and info about artist */
+.active-song-info {
+	margin-top:0.2%;
+	height: 90%;
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* song-image container */
+.song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* song-image */
+.song-image img {
+	width: 100%;
+	height: 100%;
+    border-radius: 100%;
+}
+/* ban and heart icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 8%;
+}
+/* song-info */
+.song-info {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-info p:nth-child(1) {
+	font-size: 18px;
+}
+/* song author */
+.song-info p:nth-child(2) {
+	font-size: 12px;
+}
+
+/* Silder and all icons */
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	/* First row will contain all the controls and second row will container the player */
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 22px;
+}
+/* slider */
+#slider {
+	width: 100%;
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 6px;
+}
+
+.time {
+	margin: 0px 8px;
+}
+
+.slidecontainer {
+	width: 100%;
+}
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #040000;
+	/* outline: none; */
+	opacity: 0.7;
+}
+
+/* on hovering opacity will change to 1 */
+.slider:hover {
+	opacity: 1;
+}
+
+/* circular thumb */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: #99b7d6;
+	cursor: pointer;
+}
+/*circular thumb which will move across div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+/* extra icons volume connected device-laptop,etc */
+.extras {
+	width: 23%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

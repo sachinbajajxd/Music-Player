@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsiveIndex.css">
+    <!-- Font-awesome-kit -->
+    <script src="https://kit.fontawesome.com/1f012f2949.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+
+    <!-- Nav bar of the page -->
+    <nav class="navbar">
+        <!-- Logo  and name of music player -->
+        <div id="title-img-name">
+
+            <div id="music-player-img">
+                <img src="images/logo_2.png">
+                
+            </div>
+
+            <!-- Name -->
+            <div class="music-player-name">
+                <p class="text">Beat Studio</p>
+            </div>
+        </div>
+        <!-- End of logo and name section -->
+
+        <!-- Favorites -->
+        <div class="favorites">
+            <i class="fa-solid fa-heart"></i>
+            <span class="text">Favourites</span>
+        </div>
+
+        <!-- Search-bar -->
+        <div class="search-bar">
+                <input type="text" name="search" placeholder="Search a song">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            
+        </div>
+
+
+
+        <!-- Bell icon -->
+        <div class="notification">
+            <i class="fa-solid fa-bell"></i>
+            <span class="text">Notifications</span>
+        </div> 
+        
+        <!-- User icon -->
+        <div class="user">
+            <img src="images/user-img.jpeg">
+            
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+        <main>
+            <!-- Left side  -->
+            <section class="left-side">
+
+                <div class="banner">
+                    <div class="carousel">
+                        <!-- images of the carousel -->
+                        <img src="images/img1.png">
+                        <img src="images/img1.png">
+                        <img src="images/img1.png">
+                    </div>
+                </div>
+
+                <!-- Latest release section -->
+                <div class="latest-release text">
+
+                    <h1 class="mb-10 text">Latest Release</h1>
+                    <!-- List of the songs -->
+                    <div class="latest-release-list">
+                        <!-- first song -->
+                        <div class="card">
+                            <div>
+                                <img src="images/latest-release-1.jpg">
+                            </div>
+                            <!-- Details of the song Name,artist,duration -->
+                            <div class="song-info text">
+                                <h2>
+                                    Summer High
+                                </h2>
+                                <h4>
+                                    by AP Dhillon
+                                </h4>
+                            </div>
+
+                            <!-- options to add to playlist add to queue add to favorites get info -->
+
+                            <div class="options">
+                                <label for="latest-release-options">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </label>
+                                <input type="checkbox" id="latest-release-options">
+                                <div class="latest-release-dropdown-menu text">
+                                    <div class="dropdown-items">
+                                        Play Now
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add To Queue
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add to favorites
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Get Info
+                                    </div>
+
+                                </div>
+                                <p>2:50</p>
+                            </div>
+                        </div>
+
+                        <!-- second song -->
+                        <div class="card text">
+                            <div>
+                                <img src="images/latest-release-2.jpg">
+                            </div>
+                            
+
+
+                            <div class="song-info">
+                                <h2>
+                                    Brown Munde
+                                </h2>
+                                <h4>
+                                    by AP Dhillon
+                                </h4>
+                            </div>
+
+                            <div class="options">
+                                <label for="latest-release-options2">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </label>
+                                <input type="checkbox" id="latest-release-options2">
+                                <div class="latest-release-dropdown-menu">
+                                    <div class="dropdown-items">
+                                        Play Now
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add To Queue
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add to favorites
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Get Info
+                                    </div>
+                                    
+                                </div>
+
+                                <p>3:40</p>
+                            </div>
+                        </div>
+                        <!-- third song -->
+                        <div class="card">
+                            <div>
+                                <img src="images/latest-release-3.jpg">
+                            </div>
+                            
+
+
+                            <div class="song-info">
+                                <h2>
+                                    Blinding Lights
+                                </h2>
+                                <h4>
+                                    by Weeknd
+                                </h4>
+                            </div>
+
+                            <div class="options">
+                                <label for="latest-release-options3">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </label>
+                                <input type="checkbox" id="latest-release-options3">
+                                <div class="latest-release-dropdown-menu">
+                                    <div class="dropdown-items">
+                                        Play Now
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add To Queue
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add to favorites
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Get Info
+                                    </div>
+                                    
+                                </div>
+
+                                <p>3:50</p>
+                            </div>
+                        </div>
+                        <!-- fourth song -->
+                        <div class="card">
+                            <div>
+                                <img src="images/latest-release-4.jpg">
+                            </div>
+                            
+
+
+                            <div class="song-info">
+                                <h2>
+                                    Starboy
+                                </h2>
+                                <h4>
+                                    by Weekend
+                                </h4>
+                            </div>
+
+                            <div class="options">
+                                <label for="latest-release-options4">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </label>
+                                <input type="checkbox" id="latest-release-options4">
+                                <div class="latest-release-dropdown-menu">
+                                    <div class="dropdown-items">
+                                        Play Now
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add To Queue
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add to favorites
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Get Info
+                                    </div>
+                                    
+                                </div>
+
+                                <p>3:10</p>
+                            </div>
+                        </div>
+                        <!-- Fifth song -->
+                        <div class="card">
+                            <div>
+                                <img src="images/latest-release-5.jpg">
+                            </div>
+                            
+
+
+                            <div class="song-info">
+                                <h2>
+                                    Bestfriend
+                                </h2>
+                                <h4>
+                                    by Weeknd
+                                </h4>
+                            </div>
+
+                            <div class="options">
+                                <label for="latest-release-options5">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </label>
+                                <input type="checkbox" id="latest-release-options5">
+                                <div class="latest-release-dropdown-menu">
+                                    <div class="dropdown-items">
+                                        Play Now
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add To Queue
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add to favorites
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Get Info
+                                    </div>
+                                    
+                                </div>
+
+                                <p>2:40</p>
+                            </div>
+                        </div>
+                        <!-- sixth song -->
+                        <div class="card">
+                            <div>
+                                <img src="images/latest-release-6.jpg">
+                            </div>
+                            
+
+
+                            <div class="song-info">
+                                <h2>
+                                    Desires
+                                </h2>
+                                <h4>
+                                    by AP Dhillon
+                                </h4>
+                            </div>
+
+                            <div class="options">
+                                <label for="latest-release-options6">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </label>
+                                <input type="checkbox" id="latest-release-options6">
+                                <div class="latest-release-dropdown-menu">
+                                    <div class="dropdown-items">
+                                        Play Now
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add To Queue
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Add to favorites
+                                    </div>
+                                    <div class="dropdown-items">
+                                        Get Info
+                                    </div>
+                                    
+                                </div>
+
+                                <p>2:30</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Latest release section ends here -->
+
+
+                <!-- Popular artists section begins here -->
+                <div class="popular-artists">
+                    <h2 class="mb-10">
+                        Popular Artists
+                    </h2>
+                    <!-- profiles of popular artists -->
+                    <div class="popular-artists-profiles">
+                        <!-- Since there is only one playlist page clicking on any artist user will be redirected to the playlist page -->
+                        <a href="playlist.html">
+                            <div>
+                                <img src="images/artist-1.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>AP Dhillion</p>
+                            </div>
+                        </a>
+                        <!-- second artist -->
+                        <a href="playlist.html">
+                            <div>
+                                <img src="images/artist-2.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>Drake</p>
+                            </div>
+                        </a>
+                        <!-- Third Artist -->
+                        <a href="playlist.html">
+                            <div>
+                                <img src="images/artist-3.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>Weeknd</p>
+                            </div>
+                        </a>
+                        <!-- Fourth Artist -->
+                        <a href="playlist.html">
+                            <div>
+                                <img src="images/artist-4.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>Gurinder Gill</p>
+                            </div>
+                        </a>
+                        <!-- Fifth Artist -->
+                        <a href="playlist.html">
+                            <div>
+                                <img src="images/artist-5.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>Justin Bieber</p>
+                            </div>
+                        </a>
+                        <!-- Sixth Artist -->
+                        <a href="playlist.html">
+                            <div>
+                                <img src="images/artist-6.jpg">
+                                <div><i class="fas fa-play"></i></div>
+                                <p>Dua Lipa</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Station -->
+                                <!-- fd -->
+                                <div class="div">d</div>
+                <div class="music-themes">
+                    <!-- i have used 3 divs for stations design  -->
+                    <div class="stations">
+                        <div id="div1">
+                            <div id="div2">
+                                <div id="div3">
+                                    <img src="images/station-img.jpg">
+                                    <p>Stations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- various themes -->
+                    <div class="theme-main">
+                        <div class="theme-content">
+                            <img src="images/latest-release-1.jpg">
+                            <p>Workout</p>
+                        </div>
+                        <div class="theme-content">
+                            <img src="images/latest-release-1.jpg">
+                            <p>Classical</p>
+                        </div>
+                        <div class="theme-content">
+                            <img src="images/latest-release-1.jpg">
+                            <p>Romantic</p>
+                        </div>
+                        <div class="theme-content">
+                            <img src="images/latest-release-1.jpg">
+                            <p>Korean</p>
+                        </div>
+                        <div class="theme-content">
+                            <img src="images/latest-release-1.jpg">
+                            <p>Retro</p>
+                        </div>
+                        <div class="theme-content">
+                            <img src="images/latest-release-1.jpg">
+                            <p>Bhangra</p>
+                        </div>          
+                    </div>
+                </div>
+
+                <!-- Language section -->
+                <div class="language">
+                    <!-- latest english section -->
+                    <h1 class="language-heading">
+                        Latest English
+                    </h1>
+                    <!-- contents of latest english -->
+                    <div class="language-content">
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Bestfriend</p>
+                            <p>May 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Jiggle Jiggle</p>
+                            <p>June 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Starboy</p>
+                            <p>Jan 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Massive</p>
+                            <p>Aug 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Fair Trade</p>
+                            <p>June 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Faith</p>
+                            <p>Aug 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hindi section -->
+                <!-- Language class is common for both english and hindi -->
+                <div class="language">
+                    <!-- hindi section heading -->
+                    <h1 class="language-heading">
+                        Latest Hindi and Punjabi
+                    </h1>
+                    <!-- hindi section content -->
+                    <div class="language-content">
+    
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Kesariya</p>
+                            <p>Aug 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Secrets</p>
+                            <p>Aug 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Summer High</p>
+                            <p>Aug 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Peaches</p>
+                            <p>July 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>Aarambh</p>
+                            <p>Aug 2022</p>
+                        </div>
+                        <div>
+                            <img src="images/latest-release-1.jpg">
+                            <p>OG</p>
+                            <p>Aug 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Top albums section -->
+                <div class="top-albums">
+                    <h2 class="mb-10">
+                        Top Albums
+                    </h2>
+
+                    <div class="top-albums-list">
+                        <!-- First -->
+                        <div>
+                            <a href="playlist.html">
+                                <img src="images/album-1.jpg">
+                                <p>Hidden Gems</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="playlist.html">
+                                <img src="images/album-2.jpg">
+                                <p>Not By Chance</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="playlist.html">
+                                <img src="images/album-3.png">
+                                <p>Dawn FM</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="playlist.html">
+                                <img src="images/album-4.png">
+                                <p>Certified Lover Boy</p>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Genre -->
+                <div class="genre">
+
+                    <h2>Top Genre</h2>
+
+                    <div class="genre-div">
+                        <figure class="fig">
+                            <img src="images/genre-edm.jpg">
+                            <figcaption class="fig-caption">EDM</figcaption>
+                        </figure>
+    
+    
+                        <figure class="fig">
+                            <img src="images/genre-2.png">
+                            <figcaption class="fig-caption">Lo-fi</figcaption>
+                        </figure>
+    
+                        <figure class="fig">
+                            <img src="images/genre-3.jpg">
+                            <figcaption class="fig-caption">Hip-Hop</figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <!-- Genre ends -->
+
+            </section>
+        <!-- left-side completed -->
+        
+        <!-- aside section -->
+        
+        <label for="more"><i class="fa-solid fa-angle-right"></i>More</label>
+        <!-- More button -->
+        <!-- Check box -> this will always be hidden -->
+        <input type="checkbox" id="more">
+        
+        <!-- Right-side -> section-2 -->
+        <aside class="right-side">
+            <div class="heading">
+                <h1>Playlist</h1>
+                <h4>
+                    <a href="#queue-choices">Queue <i class="fas fa-chevron-circle-down"></i></a>
+                </h4>
+            </div>
+            <!-- queue-option-box will be shown when the user clicks on the Queue button -->
+            <!-- consists of 3 options playlists,add to favorites and close -->
+            <div class="queue-options" id="queue-choices">
+                <p><a href="" id="queue-options-playlist">Playlists</a></p>
+                <hr>
+                <p><a href="" id="queue-options-favorites">Favourite songs</a></p>
+                <hr>
+                <p><a href="#" id="queue-options-close">Close</a></p>
+            </div>
+                <!-- Content of the Playlist/queue -->
+            <div class="playlist-content">
+                <!-- first song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <!-- index -->
+                        <div style="margin-right:4px;">
+                            1.
+                        </div>
+                        <div class="cover-img">
+                            
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <!-- Song name and artist name -->
+                        <div>
+                            <div>
+                                Brown Munde
+                            </div>
+                            <p>
+                                AP Dhillon
+                            </p>
+                        </div>
+                    </div>
+                    <!-- like button -->
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- second song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            2.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                OG
+                            </div>
+                    <p>
+                                Prem Dhillon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- third song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            3.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Massive
+                            </div>
+                            <p>
+                                Drake
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- fourth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            4.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Blinding Lights
+                            </div>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- fifth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            5.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Kesariya
+                            </div>
+                            <p>
+                                Pritam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- sixth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            6.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Jimmy Cooks
+                            </div>
+                            <p>
+                                Drake
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- seventh song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            7.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Desires
+                            </div>
+                            <p>
+                                AP Dhillon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- eighth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            8.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Summer High
+                            </div>
+                            <p>
+                               AP Dhillon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- ninth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            9.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Bestfriend
+                            </div>
+                            <p>
+                                Weeknd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- tenth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            10.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                No Lie
+                            </div>
+                            <p>
+                                Dua Lipa
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- eleventh song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            11.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Brown Munde
+                            </div>
+                            <p>
+                                AP Dhillon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <!-- twelfth song -->
+                <div class=playlist-item>
+                    <div class="left-content">
+                        <div style="margin-right:4px;">
+                            12.
+                        </div>
+                        <div class="cover-img">
+                            <img src="images/latest-release-2.jpg">
+                        </div>
+                        <div>
+                            <div>
+                                Currents
+                            </div>
+                            <p>
+                                Drake
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <!-- info about song -->
+        <div class="active-song-info">
+            <div class="song-image">
+                <img src="./images/album-1.jpg">
+            </div>
+            <!-- Name of the song and the artist -->
+            <div class="song-info">
+                <p>Summer High</p>
+                <p>AP Dhillon</p>
+            </div>
+
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+
+        <!-- Control icons and slider -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    0:15
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    2:50
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="extras">
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

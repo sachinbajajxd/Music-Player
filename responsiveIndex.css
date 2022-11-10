@@ -1,0 +1,193 @@
+/* Media queries for index.html page */
+
+@media screen and (max-width:1200px){
+
+    /* size of search bar will be reduced */
+    .search-bar{
+        width:30%;
+    }
+
+    input{
+        font-size: 10px !important;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+	/* more button will be visible and right-side will be hidden by default for this viewport */
+	label[for="more"] {
+		display: block;
+	}
+	
+
+	.right-side {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 66vh;
+		background-color: #9c9c9c;
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 23.5%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:10px;
+	}
+	.playlist-content {
+		overflow: visible;
+	}
+	/* re-adjusted the queue options box */
+	.queue-options {
+		position: absolute;
+		height: auto;
+		width: auto;
+		top: 7%;
+		right: 0%;
+	}
+	/* more button */
+	input[id="more"]:checked ~ .right-side {
+		visibility: visible;
+		opacity: 1;
+	}
+	.right-side::-webkit-scrollbar {
+		display: none;
+	}
+	/* when right-side is hidden, left width becomes 100% */
+	.left-side {
+		width: 100%;
+	}
+	.card {
+		min-width: 250px; 
+	}
+	/* carousel adjustment */
+	.carousel {
+		height: 9%;
+	}
+	/* carousel image */
+	.banner img {
+		height: 23vw;
+		width: 34.5vw;
+	}
+	/* first and 3rd images of the carousel */
+	.banner img:nth-child(1) {
+		left: 56vw;
+	}
+	.banner img:nth-child(3) {
+		right: 56vw;
+	} /* since the size of the carousel images is increased, the hover size should also be increased */
+	.banner img:hover {
+		height: 27vw;
+		width: 40.5vw;
+	}
+	/* music themes section */
+	.music-themes {
+		justify-content: space-around;
+	}
+	.theme-main {
+		width: 50%;
+	}
+
+	.latest-release{
+		top:29vw;
+	}
+
+	
+
+	.popular-artists{
+		top:32vw;
+	}
+
+	.top-albums{
+		visibility: hidden;
+
+	}
+
+	.genre{
+		top:-40vw;
+	}
+
+	/* theme content */
+	/* increased theme content size */
+	.theme-content {
+		width: 12vw;
+		height: 12vw;
+	}
+	.theme-content p {
+		font-size: 3vw;
+		top: -12.5vw;
+	}
+	/* increased music themes image size */
+	.music-themes div img {
+		width: 12vw;
+		height: 12vw;
+	}
+}
+
+
+
+@media screen and (max-width:900px){
+	.genre{
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 550px) {
+
+	/* Hiding some icons due to small screen size */
+	
+	.song-image {
+		display: none;
+	}
+
+	.notification{
+		visibility: hidden;
+	}
+
+	.user{
+		visibility: hidden;
+	}
+
+	.theme-main {
+		width: 100%;
+	}
+	/* theme content */
+	.theme-content {
+		width: 18vw;
+		height: 18vw;
+	}
+	.theme-content p {
+		font-size: 4.5vw;
+		top: -18.8vw;
+	}
+	.music-themes div img {
+		width: 18vw;
+		height: 18vw;
+	}
+
+	/* stations */
+	/* this is the stations section- those colorful boxes in the tri-linear-gradient div */
+	#div1 {
+		width: 30vw;
+		height: 20vw;
+	}
+	#div2 {
+		width: 28vw;
+		height: 24vw;
+	}
+	#div3 {
+		width: 26vw;
+		height: 26vw;
+	}
+	#div3 img {
+		width: 12vw;
+		height: 12vw;
+	}
+	/* text part in that section which contains "stations" text */
+	#div3 p {
+		font-size: 5vw;
+	}
+	.outer-div .inner-div span {
+		font-size: 6vw;
+	}
+}

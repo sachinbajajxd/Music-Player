@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="active-song-info">
+        <!-- Song img -->
+        <div class="song-image">
+            <img src="images/latest-release-1.jpg">
+        </div>
+
+        <!-- Singer details -->
+        <div class="song-info">
+            <div>
+                Summer High
+            </div>
+            <div>
+                AP Dhillon
+            </div>
+        </div>
+
+        <div class="heart-and-ban-icon">
+            <span>
+                <i class="far fa-heart"></i>
+            </span>
+            <span>
+                <i class="fas fa-ban"></i>
+            </span>
+        </div>
+
+    </div>
+<!-- these are the main player controls -->
+<div class="player">
+    <div class="controls">
+        <div><i class="fas fa-random"></i></div>
+        <div><i class="fas fa-step-backward"></i></div>
+        <div><i class="fas fa-pause-circle"></i></div>
+        <div><i class="fas fa-step-forward"></i></div>
+        <div><i class="fas fa-redo"></i></div>
+    </div>
+    <!-- this is the slider -->
+    <div id="slider">
+        <!-- current time -->
+        <div class="time">
+            0:00
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+        </div>
+        <!-- total time -->
+        <div class="time">
+            2:50
+        </div>
+    </div>
+</div>
+<!-- other icons including the volume slider and all -->
+<div class="extras">
+    <div>
+        <i class="fas fa-list-ul"></i>
+    </div>
+    <div>
+        <i class="fas fa-laptop"></i>
+    </div>
+    <div>
+        <i class="fas fa-volume-up"></i>
+    </div>
+    <div class="slidecontainer" style="width:30%;">
+        <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+    </div>
+    <div>
+        <i class="fas fa-expand-alt"></i>
+    </div>
+</div>
+
+
+    
+</body>
+</html>
